@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> JAVASCRIPT PLAY </title>
+</head>
+<body style="background-color:lightgrey;">
+  <center>
+  <h1 style="color:red;"> JAVASCRIPT PLAY </h1>
+
+  <p>1. Hold a 3 digit number.<br><br>2. Now reverse the number. like 123 -> 321<br><br>
+  3.Now substract the smaller number from larger number<br><br>4. Enter the last digit of answer in below field :<br>
+  </p>
+  <input id = "demo">
+  <button type="button" onclick="myFunction()">Answer is</button>
+  <p id = "demo1"></p>
+  <script>
+    function myFunction(){
+      var x;
+      x = document.getElementById("demo").value;
+      var m = 9;
+      var a = m - x;
+      var text = "Answer is "+ a + m + x;
+      document.getElementById("demo1").innerHTML = text;
+  }
+
+  </script>
+
+</body>
+</html>
