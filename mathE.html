@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> JAVASCRIPT PLAY </title>
+</head>
+<body style="background-color:pink ;">
+
+  <h1 style="color:blue;"> MATH METHODS </h1>
+  <p>Math.Random retuns random value between 0 to 1.<br><br>
+  Math.Min returns minimum value.<br><br>
+  Math.Max returns maxumum value.<br><br>
+  Math.Round returns a number which is round figure.<br><br>
+  Math.ceil returns the number upto the nearest integer.<br><br>
+  Math.floor returns the number down to the nearest integer.<br><br>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+
+  <script>
+    function myFunction(){
+      var a,b,c,d,e,f;
+      a = Math.random();
+      b = Math.min(4,2,8,9,1);
+      c = Math.max(4,2,8,9,1);
+      d = Math.round(8.9);
+      e = Math.ceil(8.9);
+      f = Math.floor(8.9);
+      var text = "Random : "+a+"<br><br>"+"Minimum from (4,2,8,9,1) : "+b+"<br><br>"+
+      "Maximum from (4,2,8,9,1) : "+c+"<br><br>"+"Round of 8.9 : "+d+"<br><br>"+
+      "Up round of 8.9 : "+e+"<br><br>"+"Down Round of 8.9 : "+f;
+      document.getElementById("demo").innerHTML = text;
+
+  }
+
+  </script>
+
+</body>
+</html>

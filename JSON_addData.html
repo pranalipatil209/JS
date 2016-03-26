@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> JSON  </title>
+</head>
+<body>
+  <center>
+    <p><b>Firstname<b></p>
+    <input id="fname" type="text"><br>
+    <p><b>Lastname<b></p>
+    <input id="lname" type="text"><br><br>
+    <button onclick="addData()">INSERT</button>
+    <button onclick="removeData()">DELETE</button><br>
+    <p id="prnt"></p><br><br>
+    <p id="p1"></p><br><br>
+
+
+  <script>
+    var f1name, l1name;
+    var count = 2;
+    var text ='{"students" : ['+
+    '{"f_name":"Chandler","LastName":"Bing"},' +
+    '{"f_name":"Monica","LastName":"Geller"},' +
+    '{"f_name":"Ross","LastName":"Geller"}]}';
+    obj = JSON.parse(text);
+    for(i=0; i<=count; i++)
+    {
+      document.getElementById("prnt").innerHTML +=
+      obj.students[i].f_name + " " + obj.students[i].LastName+"<br>"+"---------------------------" + " <br>";
+    }
+
+
+    function addData() {
+      document.getElementById("prnt").innerHTML="";
+      f1name = document.getElementById("fname").value;
+      l1name = document.getElementById("lname").value;
+      document.getElementById("p1").innerHTML = f1name +" "+  l1name + " "+ "added.";
+      obj.students.push({"f_name":f1name,"LastName":l1name});
+      count ++;
+      for(i=0; i<=count; i++)
+      {
+        document.getElementById("prnt").innerHTML +=
+        obj.students[i].f_name + " " + obj.students[i].LastName+"<br>" + "---------------------------"+ " <br> ";
+
+      }
+}
+    function removeData(){
+
+        document.getElementById("prnt").innerHTML="";
+        count--;
+        var p = count + 1;
+        document.getElementById("p1").innerHTML = obj.students[p].f_name +" "+  obj.students[p].LastName + " "+ "removed.";
+        obj.students.pop();
+        for(i=0; i<=count; i++)
+        {
+        document.getElementById("prnt").innerHTML +=
+        obj.students[i].f_name + " " + obj.students[i].LastName+"<br>" + "---------------------------"+ " <br> ";
+
+      }
+    }
+    </script>
+  </body>
+</html>

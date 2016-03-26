@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Array Practice </title>
+</head>
+<body>
+  <center>
+    <p> Colors available : Pink, Blue, Cyan, Black, Red </p><br>
+    <button onclick="myFunction()">Insert</button><br>
+    <p id="insert_V"></p><br><br>
+    <p>You can POP colors one by one</p>
+    <button onclick="pop1()">POP</button>
+    <p id="str"></p>
+    <p id="poped"></p>
+
+    <script>
+    var colors = ["Pink" , "Blue" , "Cyan" , "Black" , "Red"];
+    document.getElementById("insert_V").innerHTML = colors;
+
+    function myFunction() {
+      colors.push("Yellow");
+      document.getElementById("insert_V").innerHTML = colors;
+    }
+
+    function pop1(){
+
+        document.getElementById("poped").innerHTML = "Poped : " +colors.pop();
+        document.getElementById("str").innerHTML = colors;
+    }
+    </script>
+
+</body>
+</html>
