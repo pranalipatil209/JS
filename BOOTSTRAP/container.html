@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Container</title>
+    <style type="text/css">
+      .navbar-default {
+      background-color: #211710;
+       }
+      .navbar-default .navbar-brand {
+        color: #897668;
+      }
+      .navbar-default .navbar-nav > li > a {
+        color: #897668;
+      }
+      .navbar-default .navbar-nav > li > a:hover,
+      .navbar-default .navbar-nav > li > a:focus {
+        color: #FFFFFF;
+    }
+      .navbar-default .navbar-brand:hover,
+      .navbar-default .navbar-brand:focus {
+        color: #FFFFFF;
+      }
+
+      .btn-primary{
+        background-color : #211710;
+        color : #897668;
+      }
+
+      .btn-primary:active,
+      .btn-primary:focus,
+      .btn-primary:hover {
+        background-color : #897668;
+        color : #FFFFFF;
+      }
+      .btn{
+        border:0px solid transparent;
+      }
+      .inner-addon {
+        position: relative;
+        margin-top: 8px;
+      }
+      .inner-addon .glyphicon {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+      }
+      .left-addon .glyphicon  { left:  0px;}
+      .left-addon input { padding-left:  30px; }
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class = "container-fluid">
+        <div class = "navbar-header">
+          <a class = "navbar-brand" href = "#">Coffee Land</a>
+        </div>
+        <ul class = "nav navbar-nav">
+          <li class = "active"><a href = "JSON_addData.html">Home</a></li>
+          <li><a href = "#">Menu</a></li>
+          <li><a href = "#">About Us</a></li>
+          <li class = "dropdown">
+          <a class= "dropdown-toggle" data-toggle = "dropdown" href = "#">Contact
+          <span class = "caret"></span></a>
+          <ul class = "dropdown-menu">
+            <li><a href = "#">Address</a></li>
+            <li><a href = "#">Feedback</a></li>
+          </ul>
+        </li>
+      </ul>
+        <ul class = "nav navbar-nav navbar-right">
+          <li><a href = "#"><span class = "glyphicon glyphicon-search"></span>Search</a></li>
+          <li><a href = "#"><span class = "glyphicon glyphicon-heart-empty"></span></a></li>
+        </ul>
+      </div>
+    </nav> -->
+    <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+          <div class = "container-fluid">
+
+            <div class="navbar-header">
+
+              <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="#" class="navbar-brand">Coffee Land</a>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class = "dropdown">
+                <a class= "dropdown-toggle" data-toggle = "dropdown" href = "#">Contact
+                <span class = "caret"></span></a>
+                <ul class = "dropdown-menu">
+                  <li><a href = "#">Address</a></li>
+                  <li><a href = "#">Feedback</a></li>
+                </ul>
+                </li>
+                <li>
+                  <div class="inner-addon left-addon">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <input type="text" class="form-control" />
+                  </div>
+
+                </li>
+              </ul>
+              <ul class = "nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href = "file:///home/bridgeit/Documents/pranali/JS/BOOTSTRAP/LogIn.html#"><span></span>Sign In</a></li>
+                    <li><a href = "file:///home/bridgeit/Documents/pranali/JS/BOOTSTRAP/register.html"><span>Register</span></a></li>
+                  </ul>
+                </li>
+                  <li><a href = "#"><span class = "glyphicon glyphicon-heart-empty"></span></a></li>
+              </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class = "container-fluid">
+      <div class = "row-fluid">
+        <div class = "jumbotron">
+          <div class = "row">
+            <div class = "col-md-4">
+              <img src="image/Coffee_Cup.png" class="img-rounded" width="230" height="300">
+            </div>
+            <div class = "col-md-8">
+              <br><br><br><br><br>
+              <h1 style = "color:Saddlebrown;">Welcome to Coffee World!</h1>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class = "page-header">
+          <h1>Its just an Example. But you can get a cup of coffee, by your own! </h1>
+        </div> -->
+      </div>
+      <script>
+        function btnColor(btn) {
+          var property=document.getElementById(btn);
+          if (.btn-primary.style.background-color == "#211710") {
+            .btn-primary.style.background-color="#897668";
+          }
+          else {
+            .btn-primary.style.background-color = "#211710";
+          }
+        }
+    </script>
+      <div class = "row">
+        <div class = "col-md-2 sidebar">
+          <div class = "row-fluid">
+          <div class="btn-group btn-group-vertical btn-block">
+            <button id = "1" type="button" class="btn btn-primary" data-toggle="collapse" data-target = "#coffee" onclick = "btnColor("1")">
+              Coffee </button>
+              <div id="coffee" class="collapse">
+                <ul id = "clist">
+                  <li><a href="#" style="color: #897668">Espresso</a></li>
+                  <li><a href="#" style="color: #897668">Mocha</a></li>
+                  <li><a href="#" style="color: #897668">Latte</a></li>
+                </ul>
+              </div>
+            <button id = "2" type="button" class="btn btn-primary " data-toggle="collapse" data-target = "#tea" onclick = "btnColor("2")">
+              Tea </button>
+              <div id="tea" class="collapse">
+                <ul id = "tlist">
+                  <li><a href="#" style="color: #897668">Black Tea</a></li>
+                  <li><a href="#" style="color: #897668">Ice Tea</a></li>
+                  <li><a href="#" style="color: #897668">Lemon Tea</a></li>
+                </ul>
+              </div>
+              <button id = "3" type="button" class="btn btn-primary " data-toggle="collapse" data-target = "#sunday" onclick = "btnColor("3")">
+                Sunday Brunch</button>
+                <div id="sunday" class="collapse">
+                  <ul id = "hlist">
+                    <li><a href="#" style="color: #897668">Pancakes</a></li>
+                    <li><a href="#" style="color: #897668">Boiled Eggs</a></li>
+                    <li><a href="#" style="color: #897668">Sandwitch</a></li>
+                    <li><a href="#" style="color: #897668">Roast Chicken</a></li>
+                  </ul>
+                </div>
+          </div>
+        </div>
+        <p></p>
+      </div>
+        <div class = "col-md-8">
+        <p>Its an another sample.Its an another sample.Its an another sample.Its an another
+          sample.Its an another sample.Its an another sample.Its an another sample.Its an another sample.
+          Its an another sample.</p>
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>nec</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>augue</td>
+                  <td>semper</td>
+                  <td>porta</td>
+                  <td>Mauris</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>eget</td>
+                  <td>nulla</td>
+                  <td>Class</td>
+                  <td>aptent</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>taciti</td>
+                  <td>sociosqu</td>
+                  <td>ad</td>
+                  <td>litora</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>torquent</td>
+                  <td>per</td>
+                  <td>conubia</td>
+                  <td>nostra</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>per</td>
+                  <td>inceptos</td>
+                  <td>himenaeos</td>
+                  <td>Curabitur</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+      </div>
+      <div class = "col-md-2 sidebar">
+
+      <a href="#" style="color: #897668">Comments <span class="badge">10</span></a><br>
+      <blockquote>
+        <p>Very nice Cafe.Nice Environment.</p>
+        <footer>anonomous</footer>
+      </blockquote>
+      <blockquote>
+        <p>Very nice Cafe.Nice Environment.</p>
+        <footer>anonomous</footer>
+      </blockquote>
+      <blockquote>
+        <p>Very nice Cafe.Nice Environment.</p>
+        <footer>anonomous</footer>
+      </blockquote>
+      <blockquote>
+        <p>Very nice Cafe.Nice Environment.</p>
+        <footer>anonomous</footer>
+      </blockquote>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
